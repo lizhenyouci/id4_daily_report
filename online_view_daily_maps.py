@@ -5,7 +5,7 @@ import tempfile
 import os
 
 def main():
-    load_dotenv()  # Load environment variables from .env file
+    load_dotenv(override=True)  # Load environment variables from .env file
 
     # C:\Users\zli0003\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts\streamlit.exe run C:/Users/zli0003/PycharmProjects/ID4/id4-data-processing/daily_map/online_view_daily_maps.py
     # pipreqs . --encoding=utf8 --force
