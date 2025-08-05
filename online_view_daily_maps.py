@@ -11,9 +11,9 @@ def main():
     # pipreqs . --encoding=utf8 --force
 
     # Azure Blob configuration
-    connection_string = os.getenv("connection_string")
-    container_name = os.getenv("container_name")
-    folder_name =  os.getenv("folder_name")
+    connection_string = os.environ.get("connection_string")
+    container_name = os.environ.get("container_name")
+    folder_name =  os.environ.get("folder_name")
 
     # initialize BlobServiceClient
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
